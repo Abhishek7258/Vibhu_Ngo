@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #a21caf, #e11d48);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, #fdf4ff 0%, #fff1f2 50%, #fae8ff 100%);
+  }
+  .card-shadow {
+    box-shadow: 0 4px 24px rgba(162, 28, 175, 0.08), 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .card-shadow-hover {
+    box-shadow: 0 12px 40px rgba(162, 28, 175, 0.18), 0 4px 12px rgba(0,0,0,0.06);
+  }
+}
